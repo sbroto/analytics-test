@@ -1,0 +1,11 @@
+{
+  "entry-method": "analytic.MaxTemperatureDetector.detector",
+  "non-conda-libs": [
+    "boto"
+  ],
+  "conda-libs": [
+    "numpy",
+    "scipy",
+    "statsmodels"
+  ]
+}

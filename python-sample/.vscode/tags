@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MaxTemperatureDetector	../max-temperature-detector/analytic/MaxTemperatureDetector.py	/^class MaxTemperatureDetector(object):$/;"	kind:class	line:7
+MaxTemperatureDetector	../max-temperature-detector/analytic/__init__.py	/^from MaxTemperatureDetector import MaxTemperatureDetector$/;"	kind:namespace	line:1
+MaxTemperatureDetector	../max-temperature-detector/testbench/TestMaxTemperaturDetector.py	/^from analytic import MaxTemperatureDetector$/;"	kind:namespace	line:2
+MaxTemperatureDetector.py	../max-temperature-detector/analytic/MaxTemperatureDetector.py	1;"	kind:file	line:1
+TestMaxTemperaturDetector.py	../max-temperature-detector/testbench/TestMaxTemperaturDetector.py	1;"	kind:file	line:1
+__init__	../max-temperature-detector/analytic/MaxTemperatureDetector.py	/^    def __init__(self):$/;"	kind:member	line:11
+__init__.py	../max-temperature-detector/analytic/__init__.py	1;"	kind:file	line:1
+detector	../max-temperature-detector/analytic/MaxTemperatureDetector.py	/^    def detector(self, inputJson):$/;"	kind:member	line:14
+dm	../max-temperature-detector/testbench/TestMaxTemperaturDetector.py	/^    dm = MaxTemperatureDetector()$/;"	kind:variable	line:5
+json	../max-temperature-detector/analytic/MaxTemperatureDetector.py	/^import json$/;"	kind:namespace	line:4

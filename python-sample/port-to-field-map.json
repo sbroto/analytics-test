@@ -1,0 +1,32 @@
+{
+    "iterations": [
+        {
+            "inputMaps": [
+                {
+                    "valueSourceType": "DATA_CONNECTOR",
+                    "fullyQualifiedPortName": "data.time_series.temperature",
+                    "fieldId": "temperature",
+                    "queryCriteria": {
+                        "start": "1mm-ago",
+                        "tags": [
+                            {
+                                "limit": 20
+                            }
+                        ]
+                    },
+                    "engUnit": "Celsius",
+                    "required": true,
+                    "dataSourceId": "PredixTimeSeries"
+                }
+            ],
+            "outputMaps": [
+                {
+                    "fullyQualifiedPortName": "data.time_series.growth",
+                    "fieldId": "growth",
+                    "engUnit": "Celsius",
+                    "dataSourceId": "PredixTimeSeries"
+                }
+            ]
+        }
+    ]
+}

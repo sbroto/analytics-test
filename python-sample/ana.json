@@ -1,0 +1,12 @@
+{
+  "trustedIssuerIds": [
+    "https://foundry-eu.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token"
+  ],
+  "runtimeClientId": "scheduler-client-secret",
+  "runtimeClientSecret": "scheduler-client-secret",
+  "predixAssetZoneId": "8e19c8fd-94b8-42a8-acf4-0b75a5a75ee9",
+  "predixTimeseriesZoneId": "7645b7a9-0643-472b-9a0d-631bb01ca783",
+  "uiDomainPrefix": "foundry-eu",
+  "uiClientId": "ui-client-secret",
+  "uiClientSecret": "ui-client-secret"
+}

@@ -1,0 +1,11 @@
+{
+    "orchestrationConfigurationId": "69c07b70-0cfc-421b-a5e5-172c2965b469",
+    "assetId": null,
+    "assetGroup": null,
+    "assetDataFieldsMap": {
+        "KW": "KW",
+        "vibration": "vibration",
+        "bearing_temperature": "bearing_temperature",
+        "bearing_temperature_final": "bearing_temperature_final"
+    }
+}

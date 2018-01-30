@@ -1,0 +1,30 @@
+{
+    "name": "TimeseriesAdderJob",
+    "description": "TimeseriesAdderJob description",
+    "state": "Active",
+    "cron": {
+        "seconds": "0",
+        "minutes": "0/5",
+        "hours": "*",
+        "dayOfMonth": "*",
+        "months": "*",
+        "dayOfWeek": "?",
+        "years": "*",
+        "timeZoneId": "UTC"
+    },
+    "executionRequest": {
+        "url": "https://predix-analytics-execution-release.run.aws-usw02-pr.ice.predix.io/api/v2/execution/async",
+        "httpMethod": "POST",
+        "httpHeaders": [
+            {
+                "name": "Content-Type",
+                "value": "application/json"
+            },
+            {
+                "name": "Predix-Zone-Id",
+                "value": "a1e602f3-1fc1-4302-be4b-cbf6a9ed126a"
+            }
+        ],
+        "inputData": "{\"orchestrationConfigurationId\": \"69c07b70-0cfc-421b-a5e5-172c2965b469\",\"assetId\": null,\"assetGroup\": null,\"assetDataFieldsMap\": {\"KW\": \"KW\",\"vibration\": \"vibration\",\"bearing_temperature\": \"bearing_temperature\",\"bearing_temperature_final\": \"bearing_temperature_final\"}}"
+    }
+}

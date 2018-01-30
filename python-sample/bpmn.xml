@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath" id="sid-81430087-7a44-4be3-8517-914faf923256"
+             targetNamespace="DSP-PM" typeLanguage="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="OrchestrationWithOneAnalytic" isExecutable="true">
+
+        <startEvent id="start-event"
+                    name="">
+            <outgoing>in-to-analytics</outgoing>
+        </startEvent>
+
+        <serviceTask completionQuantity="1"
+                     id="max-temperature-detector"
+                     isForCompensation="false"
+                     name="4049e104-8897-4c06-b32f-772052b219c7::MaxTemperatureDetector::v6"
+                     startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>in-to-analytics</incoming>
+            <outgoing>out-to-analytics</outgoing>
+        </serviceTask>
+
+        <endEvent id="end-event" name="">
+            <incoming>out-to-analytics</incoming>
+        </endEvent>
+
+        <sequenceFlow id="in-to-analytics"
+                      name="" sourceRef="start-event"
+                      targetRef="max-temperature-detector"/>
+
+        <sequenceFlow id="out-to-analytics"
+                      name="" sourceRef="max-temperature-detector" targetRef="end-event"/>
+
+    </process>
+
+</definitions>

@@ -1,0 +1,9 @@
+{
+    "orchestrationConfigurationId": "<Orchestration Catalog Entry Id>",
+    "assetId": null,
+    "assetGroup": null,
+    "assetDataFieldsMap": {
+        "temperature": "temperature-esp32_08A444",
+        "growth": "growth-esp32_08A444"
+    }
+}

@@ -1,0 +1,1 @@
+from MaxTemperatureDetector import MaxTemperatureDetector

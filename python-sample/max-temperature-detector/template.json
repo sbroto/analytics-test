@@ -1,0 +1,53 @@
+{
+  "analyticName": "max-temperature-detector",
+  "analyticVersion": "v6",
+  "inputPortDefinitions": [
+    {
+      "portType": "COMPOSITE",
+      "portName": "data",
+      "variable": false,
+      "childrenPorts": [
+        {
+          "portName": "time_series",
+          "portType": "TIMESERIES_ARRAY",
+          "required": true,
+          "variable": false,
+          "columns": [
+            {
+              "portName": "temperature",
+              "portType": "FIELD",
+              "variable": false,
+              "dataType": "DOUBLE_ARRAY",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outputPortDefinitions": [
+    {
+      "portName": "data",
+      "portType": "COMPOSITE",
+      "required": true,
+      "variable": false,
+      "childrenPorts": [
+        {
+          "portName": "time_series",
+          "portType": "TIMESERIES_ARRAY",
+          "required": true,
+          "variable": false,
+          "columns": [
+            {
+              "portName": "growth",
+              "portType": "FIELD",
+              "variable": false,
+              "dataType": "DOUBLE_ARRAY",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
